@@ -15,6 +15,10 @@
 !bin
 !bin/*.bash
 !lib
+!lib/coingecko
+!lib/coingecko/*.js
+!lib/coingecko/adhoc-utils
+!lib/coingecko/adhoc-utils/*.js
 !lib/helpers
 !lib/helpers/*.js
 !lib/middleware
