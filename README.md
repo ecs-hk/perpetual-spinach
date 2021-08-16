@@ -1,2 +1,11 @@
 # perpetual-spinach
-Containerized dashboard for crypto coins
+
+Deploy a containerized crypto dashboard.
+
+```bash
+npm run container
+```
+
+```bash
+curl -H 'Accept: application/json' http://localhost:8080
+```

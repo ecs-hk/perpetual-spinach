@@ -1,0 +1,8 @@
+*
+!.dockerignore
+!.eslintignore
+!.eslintrc
+!app.js
+!lib
+!package.json
+!package-lock.json

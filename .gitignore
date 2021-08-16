@@ -1,0 +1,23 @@
+# Ignore everything
+*
+# Include necessary dot-files
+!.dockerignore
+!.eslintignore
+!.eslintrc
+!.gitignore
+# Include necessary files
+!app.js
+!Dockerfile
+!package.json
+!package-lock.json
+!README.md
+# Include necessary directories and code
+!bin
+!bin/*.bash
+!lib
+!lib/helpers
+!lib/helpers/*.js
+!lib/middleware
+!lib/middleware/*.js
+!lib/routes
+!lib/routes/*.js
