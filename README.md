@@ -3,7 +3,8 @@
 Deploy a containerized crypto dashboard.
 
 ```bash
-npm run container
+./bin/container-ctl.bash 
+USAGE: container-ctl.bash build|reboot|logs|kill ['ps:*']
 ```
 
 ```bash

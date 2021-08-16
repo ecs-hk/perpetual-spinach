@@ -85,7 +85,7 @@ run_container() {
 
         "${_cmd}" run -d \
         --name="${_container_name}" \
-        -e MAGIC_TOKEN="${MAGIC_TOKEN}" \
+        -e PS_COINS="${PS_COINS}" \
         -p 127.0.0.1:8080:8080 \
         "${_tag}"
 
@@ -107,11 +107,10 @@ tail_container_logs() {
 }
 
 print_script_usage_and_exit() {
-        local _args='reboot|logs|kill'
-        local _ab1='sc:*'
-        local _ab2='sc:helpers:*'
+        local _args='build|reboot|logs|kill'
+        local _opt='ps:*'
 
-        printf '%s\n' "USAGE: ${0##*/} ARG1 [ARG2]"
+        printf '%s\n' "USAGE: ${0##*/} ${_args} ['${_opt}']"
 
         exit 1
 }
@@ -123,6 +122,9 @@ print_script_usage_and_exit() {
 set_docker_cmd
 
 case "${_arg}" in
+'build')
+        build_image
+        ;;
 'reboot')
         build_image
         run_container
